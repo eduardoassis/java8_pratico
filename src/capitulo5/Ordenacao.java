@@ -24,5 +24,10 @@ public class Ordenacao {
         Collections.sort(usuarios, (u1, u2) -> u1.getNome().compareTo(u2.getNome()));
 
         usuarios.forEach(usuario -> System.out.println(usuario.getNome()));
+
+        // Default method sort da interface List
+        usuarios.sort((o1, o2) -> o2.getNome().compareTo(o1.getNome()));
+
+        usuarios.forEach(usuario -> System.out.println(usuario.getNome()));
     }
 }
